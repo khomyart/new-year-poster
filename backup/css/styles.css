@@ -21,28 +21,12 @@ body, html {
     background: rgba(1, 4, 12, 0.712);
 }
 
-.welcoming-window-logos-holder {
+.welcoming-window-logo {
     position: absolute;
-    top: 10%;
-    left: 49%;
-    transform: translate(-50%, 0%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 5%;
+    left: 0px;
+    width: 250px;
 }
-
-.logo-1 {
-    width: 200px;
-}
-
-.gap-between-logos {
-    width: 20px;
-}
-
-.logo-2 {
-    width: 200px;
-}
-
 
 .welcoming-window-image {
     position: absolute;
@@ -54,21 +38,17 @@ body, html {
     z-index: -1;
 }
 
-.welcoming-window-text-decor{
-    
-}
-
 .welcoming-window-text{
     color: white;
     text-align: center;
     /*text-shadow: 1px 0px 3px rgba(145, 150, 150, 1);*/
+    font-size: 3rem;
 }
 
 .welcoming-window-text-header {
     font-family: 'Lobster', cursive;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
-
 .welcoming-window-text-regular{
     font-family: 'Caveat', cursive;
     font-size: 2.5rem;
@@ -97,19 +77,13 @@ body, html {
     width: 55px;
     height: 55px;
     background: white;
-    cursor: pointer;
 }
 
-/* .welcoming-window-button-holder:active {
-    transform: scale(0.95) translate(-52%, 0%);
-} */
-
 .welcoming-window-button:active {
-    transform: scale(0.90);
+
 }
 
 .welcoming-window-button:hover {
-
 }
 
 .welcoming-window-button:focus {

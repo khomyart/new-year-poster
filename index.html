@@ -43,7 +43,7 @@
                 <br>
                 <br>
                 <span class="welcoming-window-text-regular">
-                    Свято починається з 13 грудня і триває до 24 січня!
+                    Свято починається з 7 грудня і триває до 24 січня!
                     <br>
                     Прогорніть нижче, щоб дізнатися деталі
                 </span>
@@ -59,8 +59,48 @@
             </div>
         </div>
         <div class="poster-holder d-flex justify-content-center">
-            <div class="poster d-flex col-12 col-md-8">
-
+            <div class="poster d-flex flex-column col-12 col-md-8">
+                <div>
+                    <h3 class="poster-headers">
+                        Події на сьогодні:
+                    </h3>
+                    <div v-for="todayEvent in todayEvents" :key="todayEvent.day">
+                        <div class="event-card" v-for="event in todayEvent.events" :key="event.time">
+                            <div class="event-card-time">
+                                {{event.time}}
+                            </div>
+                            <div class="event-card-description">
+                                {{event.description}}
+                            </div>
+                            <div class="event-card-place">
+                                {{event.place}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="poster-headers">
+                        Загальний список подій:
+                    </h3>
+                    <div>
+                        <div v-for="event in events" :key="event.day">
+                            <h4 class="event-day">
+                                {{event.day}}
+                            </h4>
+                            <div class="event-card" v-for="littleEvent in event.events" :key="littleEvent.time">
+                                <div class="event-card-time">
+                                    {{littleEvent.time}}
+                                </div>
+                                <div class="event-card-description">
+                                    {{littleEvent.description}}
+                                </div>
+                                <div class="event-card-place">
+                                    {{littleEvent.place}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>    

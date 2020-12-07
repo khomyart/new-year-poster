@@ -17,3 +17,33 @@
 .welcoming-window-button{
     cursor: default;
 }
+
+.poster {
+    margin-top: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.event-card-time {
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+
+}
+
+.event-card-description {
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    text-align: left;
+}
+
+.event-card-place {
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}

@@ -35,3 +35,4 @@ setInterval(()=>{
     }, 10)
 
 }, config.imageChangingTime);
+

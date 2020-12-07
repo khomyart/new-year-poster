@@ -55,7 +55,7 @@ body, html {
 }
 
 .welcoming-window-text-decor{
-    
+    width: 120px;
 }
 
 .welcoming-window-text{
@@ -76,7 +76,7 @@ body, html {
 
 .welcoming-window-button-holder{
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 1;
@@ -94,9 +94,8 @@ body, html {
     background: none;
     border-radius: 50px;
     outline: none;
-    width: 55px;
-    height: 55px;
-    background: white;
+    width: 65px;
+    height: 65px;
     cursor: pointer;
 }
 

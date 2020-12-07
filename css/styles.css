@@ -115,8 +115,16 @@ body, html {
 
 }
 
-.poster {
-    height: 300px;
+.poster-holder {
     min-width: 100vw;
     background: black;
+    background-image: url('/img/poster-background.png');
+    background-color: rgba(66, 124, 199, 0.877);
+    background-size: 125px;
+}
+
+.poster {
+    background-color: white;
+    height: 300px;
+    margin-bottom: 100px;
 }

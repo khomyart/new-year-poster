@@ -84,6 +84,9 @@
                         Події на сьогодні:
                     </h3>
                     <div v-for="todayEvent in todayEvents" :key="todayEvent.day">
+                        <h4 class="event-day">
+                            {{todayEvent.day}}
+                        </h4>
                         <div class="event-card" v-for="event in todayEvent.events" :key="event.time">
                             <div class="event-card-time">
                                 {{event.time}}
@@ -97,6 +100,7 @@
                         </div>
                     </div>
                 </div>
+                <hr style="width: 50%;" class="mt-5">
                 <div>
                     <h3 class="poster-headers">
                         Загальний список подій:

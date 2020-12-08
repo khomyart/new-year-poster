@@ -187,6 +187,6 @@ body, html {
     padding: 0 10px;
     display: flex;
     align-items: center;
-    text-align: right;
+    text-align: left;
     width: 30%;
 }

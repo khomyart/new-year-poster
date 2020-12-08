@@ -171,6 +171,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 10%;
 
 }
 
@@ -178,7 +179,7 @@ body, html {
     padding: 0 10px;
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
     text-align: left;
 }
 
@@ -186,6 +187,6 @@ body, html {
     padding: 0 10px;
     display: flex;
     align-items: center;
-    text-align: center;
-    width: 20%;
+    text-align: right;
+    width: 30%;
 }

@@ -5,7 +5,7 @@ const app = Vue.createApp({
             todayEvents: [],
             events: [
                 {
-                    day: '7 грудня',
+                    day: '8 грудня',
                     events: [
                         {
                             time: '10:00',
@@ -19,7 +19,7 @@ const app = Vue.createApp({
                         }
                     ],
                     isToday: () => {
-                        return true ? this.currentDate.day == 7 
+                        return true ? this.currentDate.day == 8 
                         && this.currentDate.month == 12 : false
                     }
                 },
@@ -58,10 +58,8 @@ const app = Vue.createApp({
     watch: {
         currentDate: function(val, oldVal) {
             if (val.day != oldVal.day) {
-                console.log('data has been changed')
                 this.todayEvents = [];
                 this.events.forEach(element => {
-                    console.log(element.isToday())
                     if (element.isToday() == true) this.todayEvents.push(element);
                 });
             }

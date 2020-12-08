@@ -32,7 +32,7 @@ setInterval(()=>{
             newImage.style.zIndex = -1;
             clearInterval(imageFader);
         }
-    }, 10)
+    }, 20)
 
 }, config.imageChangingTime);
 

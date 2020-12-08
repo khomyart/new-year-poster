@@ -5,53 +5,669 @@ const app = Vue.createApp({
             todayEvents: [],
             events: [
                 {
-                    day: '8 грудня',
+                    day: '9 грудня',
                     events: [
                         {
-                            time: '10:00',
-                            description: 'Пізнавально-розважальне свято Пізнавально-розважальне святоПізнавально-розважальне святоПізнавально-розважальне святоПізнавально-розважальне свято',
-                            place: 'біля пам\'ятника св.Миколая'
+                            time: '15:00',
+                            description: 'Турнір з тенісу настільного ',
+                            place: 'Клуб «Атлет»'
                         },
-                        {
-                            time: '13:00',
-                            description: 'Пізнавально-розважальне свято',
-                            place: 'біля пам\'ятника Лесі Українки'
-                        }
                     ],
                     isToday: () => {
-                        return true ? this.currentDate.day == 8 
+                        return true ? this.currentDate.day == 9 
                         && this.currentDate.month == 12 : false
                     }
                 },
                 {
-                    day: '15-18 грудня',
+                    day: '10 грудня',
                     events: [
                         {
-                            time: '09:30',
-                            description: 'Пізнавально-розважальне свято',
-                            place: 'біля пам\'ятника Лесі Українки'
+                            time: '16:00',
+                            description: 'Майстер-клас «Листівка Святому Миколаю»',
+                            place: 'Будинок культури мікрорайону Вересневе'
                         }
                     ],
                     isToday: () => {
-                        return true ? this.currentDate.day >= 15 
-                        && this.currentDate.day <= 18 
-                        && this.currentDate.month == 12 : false
+false
+                    }
+                },
+                {
+                    day: '10, 11, 14-15, 17,18, 25-30 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '11 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '12-13 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '14 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '14 грудня - 13 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '16 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '16-18 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '17 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '17 - 19 грудня ',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '18 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '18 грудня - 19 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '18 - 20 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '18, 23 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '19 грудня – 24 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
                     }
                 },
                 {
                     day: '19 грудня',
                     events: [
                         {
-                            time: '10:30',
-                            description: 'Святкування дня святого Миколая',
-                            place: 'біля пам\'ятника Миколая'
+                            time: '',
+                            description: '',
+                            place: ''
                         }
                     ],
                     isToday: () => {
-                        return true ? this.currentDate.day == 10 
-                        && this.currentDate.month == 12 : false
+false
                     }
                 },
+                {
+                    day: '19 грудня – 20 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '21 – 22 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '21 – 28 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '22 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '22 грудня – 7 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '23 - 24 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '24 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '24 - 27 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '25 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '25 грудня – 19 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '27 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '28 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '28 - 29 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '29 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '30 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: 'Cічень',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '3 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '4 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '5 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '7 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '6-12 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '8 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '8-9 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '9 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '10 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '14 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '15 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '17 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '18 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '19 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '22 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '23 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: '23 - 24 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },
+                {
+                    day: 'Протягом грудня, січня',
+                    events: [
+                        {
+                            time: '',
+                            description: '',
+                            place: ''
+                        }
+                    ],
+                    isToday: () => {
+false
+                    }
+                },                
             ]
         }
     },

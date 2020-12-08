@@ -2,9 +2,23 @@ const   welcomingWindow = document.getElementsByClassName('welcoming-window')[0]
 const   config = {
             imageChangingTime: 10000, //ms
             images: [
-                '/img/night_city.jpg',
-                '/img/night_city_2.jpg',
-                '/img/night_city_3.jpg'
+                '/img/welcoming_page/02.jpg',
+                '/img/welcoming_page/03.jpg',
+                '/img/welcoming_page/04.jpg',
+                '/img/welcoming_page/05.jpg',
+                '/img/welcoming_page/08.jpg',
+                '/img/welcoming_page/09.jpg',
+                '/img/welcoming_page/10.jpg',
+                '/img/welcoming_page/11.jpg',
+                '/img/welcoming_page/14.jpg',
+                '/img/welcoming_page/15.jpg',
+                '/img/welcoming_page/16.jpg',
+                '/img/welcoming_page/17.jpg',
+                '/img/welcoming_page/18.jpg',
+                '/img/welcoming_page/19.jpg',
+                '/img/welcoming_page/20.jpg',
+                '/img/welcoming_page/21.jpg',
+                '/img/welcoming_page/22.jpg',
             ],
             imageFaderStep: 0.01
         }

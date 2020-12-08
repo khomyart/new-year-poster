@@ -14,6 +14,10 @@
     font-size: 2.7rem;
 }
 
+.greeting-welcoming-window-text-decor {
+    margin-top: 50px;
+}
+
 .welcoming-window-text-regular{
     font-size: 2rem;
     padding: 10px;
@@ -21,4 +25,15 @@
 
 .welcoming-window-button{
     cursor: default;
+}
+
+.greeting-welcoming-window-button{
+    cursor: default;
+    width: 30px;
+    height: 30px;
+}
+
+.greeting-welcoming-window-button-holder{
+    width: 40px;
+    height: 40px;
 }

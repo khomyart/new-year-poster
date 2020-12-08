@@ -18,8 +18,35 @@
     width: 80px;
 }
 
+.greeting-welcoming-window-text-decor {
+    margin-top: 30px;
+    width: 80px;
+}
+
 .welcoming-window-text-header {
     font-size: 2.9rem;
+}
+
+.greeting-welcoming-window-text {
+    margin-top: 10px;
+}
+
+.greeting-welcoming-window-text-header {
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+.greeting-welcoming-window-text-footer p {
+    font-size: 1.9rem;
+    margin: 5px;
+}
+
+.greeting-welcoming-window-button-holder {
+    margin-left: 0px
+}
+
+.greeting-welcoming-window-button {
+    cursor: default;
 }
 
 .welcoming-window-text-regular{

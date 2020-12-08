@@ -10,6 +10,17 @@ body, html {
     overflow-x: hidden;
 }
 
+.root-welcoming-window {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
 .welcoming-window {
     position: relative;
     display: flex;
@@ -20,6 +31,7 @@ body, html {
     overflow: hidden;
     background: rgba(1, 4, 12, 0.712);
 }
+
 
 .welcoming-window-logos-holder {
     position: absolute;
@@ -58,10 +70,40 @@ body, html {
     width: 120px;
 }
 
+.greeting-welcoming-window-text-decor {
+    margin-top: 150px;
+    width: 120px;
+}
+
 .welcoming-window-text{
     color: white;
     text-align: center;
     /*text-shadow: 1px 0px 3px rgba(145, 150, 150, 1);*/
+}
+
+.greeting-welcoming-window-text {
+    margin-top: 30px;
+    color: white;
+}
+
+.greeting-welcoming-window-text-header {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.greeting-welcoming-window-text-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.greeting-welcoming-window-text-footer p {
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    text-align: right;
 }
 
 .welcoming-window-text-header {
@@ -90,6 +132,27 @@ body, html {
     user-select: none;
 }
 
+.greeting-welcoming-window-button-holder {
+    border: 2px solid white;
+    border-radius: 75px;
+    margin-left: 15px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.greeting-welcoming-window-button {
+    background: none;
+    border-radius: 50px;
+    outline: none;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
 .welcoming-window-button {
     background: none;
     border-radius: 50px;
@@ -99,9 +162,15 @@ body, html {
     cursor: pointer;
 }
 
+
+
 /* .welcoming-window-button-holder:active {
     transform: scale(0.95) translate(-52%, 0%);
 } */
+
+.greeting-welcoming-window-button:active {
+    transform: scale(0.90);
+}
 
 .welcoming-window-button:active {
     transform: scale(0.90);
@@ -190,3 +259,32 @@ body, html {
     text-align: left;
     width: 30%;
 }
+
+.component-fade-enter-from {
+    opacity: 0;
+    transform: translate(0px, -30px);
+}
+
+.component-fade-enter-active {
+    transition: all 0.5s ease-out;
+}
+
+.component-fade-enter-to {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.component-fade-leave-from {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.component-fade-leave-to {
+    opacity: 0;
+    transform: translate(0px, -30px);
+}
+
+.component-fade-leave-active {
+    transition: all 0.5s ease-in;
+}
+

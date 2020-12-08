@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
+            currentComponent: 'default-welcoming-screen',
             currentDate: {},
             todayEvents: [],
             events: [
@@ -722,6 +723,13 @@ false
             }
         }
     },
+    methods: {
+        changeComponent(changeTo) {
+            let audio = new Audio('/sfx/bells.mp3');
+            audio.play();
+            this.currentComponent = changeTo
+        }
+    },
     beforeMount(){
         let today = new Date();
         let dd = String(today.getDate()).padStart(2, '0');
@@ -742,5 +750,68 @@ false
         }, 5000)
     },
 });
+
+app.component('default-welcoming-screen', {
+    template: `
+    <div class="root-welcoming-window">
+        <div class="welcoming-window-text-decor">
+        <img src="/img/text-separator.png" style="width: 100%;" alt="">
+    </div>
+    <div class="welcoming-window-text">
+        <span class="welcoming-window-text-header">
+            Ласкаво просимо!
+        </span>
+        <br>
+        <br>
+        <br>
+        <span class="welcoming-window-text-regular">
+            Свято починається з 9 грудня і триває до 24 січня!
+            <br>
+            Прогорніть нижче, щоб дізнатися деталі
+        </span>
+    </div>
+    <div class="welcoming-window-button-holder">
+        <div class="welcoming-window-button" v-on:click="$emit('change-component', 'greetings-welcoming-screen')">
+            <img src="/img/bells_button.png" style="width: 100%;" alt="">
+        </div>
+    </div>
+    </div>
+    `,
+    emits: ["change-component"]
+})
+
+app.component('greetings-welcoming-screen', {
+    template: `
+    <div class="root-welcoming-window">
+    <div class="greeting-welcoming-window-text-decor">
+    <img src="/img/text-separator_lamps.png" style="width: 100%;" alt="">
+</div>
+<div class="greeting-welcoming-window-text d-flex flex-column align-items-center col-11 col-md-7 ">
+    <div class="greeting-welcoming-window-text-header">
+        &emsp;Мої найщиріші вітання з нагоди новорічно-різдвяних свят!
+        Зичу здоров’я, миру, добробуту, Божого благословення і багато святкових радостей!
+    </div>
+    <div class="greeting-welcoming-window-text-footer mt-4 d-flex flex-row align-items-center justify-content-between">
+        <div>
+            <div class="greeting-welcoming-window-button-holder">
+                <div class="greeting-welcoming-window-button" v-on:click="$emit('change-component', 'default-welcoming-screen')">
+                    <img src="/img/bells_button.png" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                Луцький міський голова
+            </p>
+            <p>
+                Ігор Поліщук
+            </p>
+        </div>
+    </div>
+    </div>
+</div>
+    `,
+    emits: ["change-component"]
+})
 
 app.mount('#app');

@@ -72,7 +72,8 @@ const app = Vue.createApp({
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 11 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -99,7 +100,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 14 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -126,7 +128,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 16 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -153,7 +156,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 17 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -225,7 +229,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 18 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -272,7 +277,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 18 && this.currentDate.day <= 20)
+                                    && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -285,7 +291,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day == 18 || this.currentDate.day == 23)
+                                    && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -298,7 +305,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 19 && this.currentDate.month == 12)
+                                    || (this.currentDate.day <= 24 && this.currentDate.month == 1) : false
                     }
                 },
                 {
@@ -381,7 +389,8 @@ false
                         },
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 19 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -399,7 +408,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 19 && this.currentDate.day <= 20)
+                        && this.currentDate.month == 12 : false        
                     }
                 },
                 {
@@ -417,7 +427,8 @@ false
                         },
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 21 && this.currentDate.day <= 22)
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -430,7 +441,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 21 && this.currentDate.day <= 28)
+                        && this.currentDate.month == 12 : false        
                     }
                 },
                 {
@@ -443,7 +455,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 22 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -457,7 +470,8 @@ false
 
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 22 && this.currentDate.month == 12)
+                        || (this.currentDate.day <= 7 && this.currentDate.month == 1) : false
                     }
                 },
                 {
@@ -475,7 +489,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 23 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -508,7 +523,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 24 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -521,7 +537,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 24 && this.currentDate.day <= 27)
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -534,7 +551,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 25 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -547,7 +565,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 25 && this.currentDate.month == 12)
+                        || (this.currentDate.day <= 19 && this.currentDate.month == 1) : false
                     }
                 },
                 {
@@ -570,7 +589,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 27 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -588,7 +608,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 28 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -606,7 +627,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 29 
+                        && this.currentDate.month == 12 : false
                     }
                 },
                 {
@@ -619,7 +641,7 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -637,7 +659,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 3 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -650,7 +673,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 4 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -663,7 +687,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 5 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -676,7 +701,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 6 && this.currentDate.day <= 12)
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -689,7 +715,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 7 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -707,7 +734,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 8 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -720,7 +748,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 8 && this.currentDate.day <= 9)
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -733,7 +762,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 9 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -761,7 +791,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 10
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -774,7 +805,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 14 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -787,7 +819,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 15 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -800,7 +833,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 17 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -813,7 +847,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 18 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -831,7 +866,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 19
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -844,7 +880,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 22
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -857,7 +894,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? this.currentDate.day == 23 
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {
@@ -870,7 +908,8 @@ false
                         }
                     ],
                     isToday: () => {
-false
+                        return true ? (this.currentDate.day >= 23 && this.currentDate.day <= 24)
+                        && this.currentDate.month == 1 : false
                     }
                 },
                 {

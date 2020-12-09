@@ -288,3 +288,25 @@ body, html {
     transition: all 0.5s ease-in;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(219, 45, 45); 
+    border-radius: 7px;
+    transition: all 1s ease-in-out;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(65, 65, 65, 0.849); 
+}

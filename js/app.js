@@ -964,14 +964,17 @@ app.component('default-welcoming-screen', {
         <img src="/img/text-separator.png" style="width: 100%;" alt="">
     </div>
     <div class="welcoming-window-text">
-        <div class="welcoming-window-text-header">
+        <span class="welcoming-window-text-header">
             Ласкаво просимо!
-        </div>
+        </span>
         <br>
         <br>
-        <div class="welcoming-window-text-regular">
+        <br>
+        <span class="welcoming-window-text-regular">
             Свято 2021 починається!
-        </div>
+            <br>
+            Прогорніть нижче, щоб дізнатися деталі
+        </span>
     </div>
     <div class="welcoming-window-button-holder">
         <div class="welcoming-window-button" v-on:click="$emit('change-component', 'greetings-welcoming-screen')">
@@ -989,9 +992,9 @@ app.component('greetings-welcoming-screen', {
     <div class="greeting-welcoming-window-text-decor">
     <img src="/img/text-separator_lamps.png" style="width: 100%;" alt="">
 </div>
-<div class="greeting-welcoming-window-text d-flex flex-column align-items-center col-11 col-md-7 ">
+<div class="greeting-welcoming-window-text d-flex flex-column align-items-center col-11 col-md-8 ">
     <div class="greeting-welcoming-window-text-header">
-        &emsp;Щирі вітання з нагоди новорічно-різдвяних свят!!!<br>
+        &emsp;Щирі вітання з нагоди новорічно-різдвяних&nbsp;свят!!!<br>
         Зичу здоров’я, миру, добробуту, Божого благословіння, святкового дива та радості! 
     </div>
     <div class="greeting-welcoming-window-text-footer mt-4 d-flex flex-row align-items-center justify-content-between">

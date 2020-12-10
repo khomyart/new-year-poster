@@ -6,26 +6,12 @@ const app = Vue.createApp({
             todayEvents: [],
             events: [
                 {
-                    day: '9 грудня',
-                    events: [
-                        {
-                            time: '15:00',
-                            description: 'Турнір з тенісу настільного ',
-                            place: 'Клуб «Атлет»'
-                        },
-                    ],
-                    isToday: () => {
-                        return true ? this.currentDate.day == 9 
-                        && this.currentDate.month == 12 : false
-                    }
-                },
-                {
                     day: '10 грудня',
                     events: [
                         {
                             time: '16:00',
-                            description: 'Майстер-клас «Листівка Святому Миколаю»',
-                            place: 'Будинок культури мікрорайону Вересневе'
+                            description: 'Онлайн майстер-клас «Листівка Святому Миколаю»',
+                            place: 'fb-сторінка  Будинку культури мікрорайону Вересневе'
                         }
                     ],
                     isToday: () => {
@@ -102,20 +88,6 @@ const app = Vue.createApp({
                     isToday: () => {
                         return true ? this.currentDate.day == 14 
                         && this.currentDate.month == 12 : false
-                    }
-                },
-                {
-                    day: '14 грудня - 13 січня',
-                    events: [
-                        {
-                            time: '',
-                            description: 'Творчий проєкт «Різдвяна майстерня»',
-                            place: 'Палац культури міста Луцька (другий корпус)'
-                        }
-                    ],
-                    isToday: () => {
-                        return true ? (this.currentDate.day >= 14 && this.currentDate.month == 12)
-                                    || (this.currentDate.day <= 13 && this.currentDate.month == 1) : false
                     }
                 },
                 {
@@ -196,11 +168,6 @@ const app = Vue.createApp({
                             time: '15:00',
                             description: 'Культурно-мистецька акція «Луцьк – місто Янголів»',
                             place: 'Художній музей'
-                        },
-                        {
-                            time: '15:00',
-                            description: 'Відкриття виставки робіт переможців конкурсу «Місто Святого Миколая»',
-                            place: 'Арт-галерея «Луцьк»'
                         },
                         {
                             time: '16:00',
@@ -296,20 +263,6 @@ const app = Vue.createApp({
                     }
                 },
                 {
-                    day: '19 грудня – 24 січня',
-                    events: [
-                        {
-                            time: '',
-                            description: 'Мистецький проєкт «Вулиця Різдвяних янголів»',
-                            place: 'вул. Лесі Українки'
-                        }
-                    ],
-                    isToday: () => {
-                        return true ? (this.currentDate.day >= 19 && this.currentDate.month == 12)
-                                    || (this.currentDate.day <= 24 && this.currentDate.month == 1) : false
-                    }
-                },
-                {
                     day: '19 грудня',
                     events: [
                         {
@@ -330,7 +283,7 @@ const app = Vue.createApp({
                         {
                             time: '11:00',
                             description: 'Відеосеанс з пісочної анімації «Миколаю, Миколаю, всі на тебе ми чекаєм»',
-                            place: 'Будинок культури мікрорайону Вересневе'
+                            place: 'fb-сторінка Будинку культури мікрорайону Вересневе'
                         },
                         {
                             time: '15:00',
@@ -345,7 +298,7 @@ const app = Vue.createApp({
                         {
                             time: '16:30',
                             description: 'Урочисте засвічення вогнів головної новорічної ялинки. Передача Вифлеємського вогню громаді',
-                            place: 'Театральний майдан'
+                            place: 'Театральний майдан, ТРК "Аверс"'
                         },
                         {
                             time: '16:30',
@@ -354,7 +307,7 @@ const app = Vue.createApp({
                         },
                         {
                             time: '17:00',
-                            description: 'Концерт «Свято Миколая»',
+                            description: '«Свято Миколая»',
                             place: 'Луцька музична школа №2'
                         },
                         {
@@ -380,7 +333,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Флешмоб «Засвіти ялинку вдома»',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         },
                         {
                             time: '',
@@ -391,6 +344,34 @@ const app = Vue.createApp({
                     isToday: () => {
                         return true ? this.currentDate.day == 19 
                         && this.currentDate.month == 12 : false
+                    }
+                },
+                {
+                    day: '19 грудня – 18 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: 'Творчий проєкт «Різдвяна майстерня»',
+                            place: 'Палац культури міста Луцька (другий корпус), fb-сторінка Палацу культури міста Луцька' 
+                        },
+                    ],
+                    isToday: () => {
+                        return true ? (this.currentDate.day >= 19 && this.currentDate.month == 12)
+                        || (this.currentDate.day <= 18 && this.currentDate.month == 1) : false      
+                    }
+                },
+                {
+                    day: '19 грудня – 24 січня',
+                    events: [
+                        {
+                            time: '',
+                            description: 'Мистецький проєкт «Вулиця Різдвяних янголів»',
+                            place: 'вул. Лесі Українки' 
+                        },
+                    ],
+                    isToday: () => {
+                        return true ? (this.currentDate.day >= 19 && this.currentDate.month == 12)
+                        || (this.currentDate.day <= 24 && this.currentDate.month == 1) : false      
                     }
                 },
                 {
@@ -409,6 +390,20 @@ const app = Vue.createApp({
                     ],
                     isToday: () => {
                         return true ? (this.currentDate.day >= 19 && this.currentDate.day <= 20)
+                        && this.currentDate.month == 12 : false        
+                    }
+                },
+                {
+                    day: '21 грудня',
+                    events: [
+                        {
+                            time: '',
+                            description: '"Красна майстерня": хенд-мейд для дітей "Карнавальні маски"',
+                            place: 'Культурно-мистецький центр «Красне»'
+                        },
+                    ],
+                    isToday: () => {
+                        return true ? this.currentDate.day == 21
                         && this.currentDate.month == 12 : false        
                     }
                 },
@@ -465,7 +460,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Міжнародний онлайн марафон «Бабусине Різдво», конкурс представлення традицій святкування Різдва Христового у різних країнах світу та регіонах України',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         },
 
                     ],
@@ -498,8 +493,8 @@ const app = Vue.createApp({
                     events: [
                         {
                             time: '11:00',
-                            description: 'Майстер-клас з виготовлення ялинкових прикрас',
-                            place: 'Палац культури міста Луцька'
+                            description: 'Паперова майстерня: онлайн майстер-клас з виготовлення новорічних прикрас',
+                            place: 'fb-сторінка Палацу культури міста Луцька'
                         },
                         {
                             time: '14:30',
@@ -508,13 +503,8 @@ const app = Vue.createApp({
                         },
                         {
                             time: '16:00',
-                            description: 'Мистецька акція «Зроби новорічну прикрасу своїми руками»',
-                            place: 'Будинок культури мікрорайону Вересневе'
-                        },
-                        {
-                            time: '',
-                            description: 'Фотоконкурс «Моя_ялинка»',
-                            place: 'Соціальні мережі'
+                            description: 'Мистецька онлайн акція «Зроби новорічну прикрасу своїми руками»',
+                            place: 'fb-сторінка Будинку культури мікрорайону Вересневе'
                         },
                         {
                             time: '',
@@ -547,7 +537,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Відеопроєкт «Європейське Різдво»',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         }
                     ],
                     isToday: () => {
@@ -561,7 +551,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Фотоконкурс «#тутЄсвято»',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         }
                     ],
                     isToday: () => {
@@ -572,11 +562,6 @@ const app = Vue.createApp({
                 {
                     day: '27 грудня',
                     events: [
-                        {
-                            time: '12:00',
-                            description: '«Красна майстерня»: хенд-мейд для дітей «Карнавальні маски»',
-                            place: 'Культурно-мистецький центр «Красне»'
-                        },
                         {
                             time: '16:00',
                             description: 'Мистецький колаж «Новорічні сни»',
@@ -654,7 +639,7 @@ const app = Vue.createApp({
                         },
                         {
                             time: '14:00',
-                            description: 'Дитячий ранок «Новий рiк на порiг»',
+                            description: 'Дитячий ранок «Новорічна казка»',
                             place: 'Теремнівський будинок культури'
                         }
                     ],
@@ -668,7 +653,7 @@ const app = Vue.createApp({
                     events: [
                         {
                             time: '11:00',
-                            description: 'Онлайн майстер-клас з виготовлення різдвяних сувенірів',
+                            description: 'Паперова майстерня: онлайн майстер-клас з виготовлення різдвяних сувенірів',
                             place: 'fb-сторінка  Палацу культури міста Луцька'
                         }
                     ],
@@ -681,13 +666,32 @@ const app = Vue.createApp({
                     day: '5 січня',
                     events: [
                         {
+                            time: '15:00',
+                            description: 'Екскурсія «Різдвяний Луцьк»',
+                            place: 'Початок: від Центру туристичної інформації та послуг'
+                        },
+                        {
                             time: '16:00',
                             description: 'Онлайн майстер-клас з пісочної анімації «Різдвяні візерунки»',
-                            place: 'fb-сторінка  Палацу культури міста Луцька'
+                            place: 'fb-сторінка Будинку культури мікрорайону Вересневе'
                         }
                     ],
                     isToday: () => {
                         return true ? this.currentDate.day == 5 
+                        && this.currentDate.month == 1 : false
+                    }
+                },
+                {
+                    day: '5-6 січня',
+                    events: [
+                        {
+                            time: '11:00',
+                            description: 'Фінал благодійного проєкту «Чужих дітей не буває»',
+                            place: 'Готель «Світязь»'
+                        }
+                    ],
+                    isToday: () => {
+                        return true ? (this.currentDate.day >= 5 && this.currentDate.day <= 6)
                         && this.currentDate.month == 1 : false
                     }
                 },
@@ -697,7 +701,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Онлайн-фестиваль вертепів «З Різдвом Христовим!»',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         }
                     ],
                     isToday: () => {
@@ -711,7 +715,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Відеопроєкт «Українське Різдво»',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         }
                     ],
                     isToday: () => {
@@ -723,32 +727,13 @@ const app = Vue.createApp({
                     day: '8 січня',
                     events: [
                         {
-                            time: '15:00',
-                            description: 'Екскурсія «Різдвяний Луцьк»',
-                            place: 'Початок: від Центру туристичної інформації та послуг'
-                        },
-                        {
                             time: '',
                             description: 'Відеоперегляд  малюнків учнів Луцької художньої школи «Славим Тебе, Небесний Царю»',
-                            place: 'fb-сторінка  Клубу «Сучасник»'
+                            place: 'fb-сторінка Клубу «Сучасник»'
                         }
                     ],
                     isToday: () => {
                         return true ? this.currentDate.day == 8 
-                        && this.currentDate.month == 1 : false
-                    }
-                },
-                {
-                    day: '8-9 січня',
-                    events: [
-                        {
-                            time: '18:00',
-                            description: 'Фінал благодійного проєкту «Чужих дітей не буває»',
-                            place: 'Готель «Світязь»'
-                        }
-                    ],
-                    isToday: () => {
-                        return true ? (this.currentDate.day >= 8 && this.currentDate.day <= 9)
                         && this.currentDate.month == 1 : false
                     }
                 },
@@ -770,24 +755,14 @@ const app = Vue.createApp({
                     day: '10 січня',
                     events: [
                         {
-                            time: '12:00 - 21:00',
+                            time: '',
                             description: 'Фестиваль «Різдво у Луцьку»',
-                            place: 'Театральний майдан, Палац культури міста Луцька, вул. Лесі Українки'
-                        },
-                        {
-                            time: '12:00',
-                            description: '«Красна майстерня»: майстер-клас для дітей з аплікації «Зимові візерунки»',
-                            place: 'Культурно-мистецький центр «Красне»'
+                            place: 'fb - сторінка Департаменту культури'
                         },
                         {
                             time: '17:00',
                             description: 'Громадська акція «Спільна коляда»',
-                            place: 'Театральний майдан'
-                        },
-                        {
-                            time: '17:00',
-                            description: 'Різдвяні вечорниці',
-                            place: 'Луцька музична школа №3'
+                            place: 'fb - сторінка Департаменту культури'
                         }
                     ],
                     isToday: () => {
@@ -800,8 +775,8 @@ const app = Vue.createApp({
                     events: [
                         {
                             time: '18:00',
-                            description: 'Новорічно-різдвяний концерт «І сталось диво...»',
-                            place: 'Палац культури міста Луцька'
+                            description: 'Новорічно-різдвяний колаж «І сталось диво...»',
+                            place: 'fb-сторінка Палацу культури міста Луцька'
                         }
                     ],
                     isToday: () => {
@@ -828,8 +803,8 @@ const app = Vue.createApp({
                     events: [
                         {
                             time: '15:00',
-                            description: 'Концерт «Новорічний коктейль» за участі народного аматорського духового оркестру',
-                            place: 'Палац культури міста Луцька'
+                            description: '«Новорічний коктейль» за участі народного аматорського духового оркестру',
+                            place: 'fb-сторінка Палац культури міста Луцька'
                         }
                     ],
                     isToday: () => {
@@ -856,14 +831,9 @@ const app = Vue.createApp({
                     events: [
                         {
                             time: '',
-                            description: 'Фестиваль колядок та щедрівок «Різдвяні піснеспіви»',
-                            place: 'Театральний майдан, вул. Лесі Українки'
+                            description: 'Онлайн фестиваль колядок та щедрівок «Різдвяні піснеспіви»',
+                            place: 'fb - сторінка Департаменту культури'
                         },
-                        {
-                            time: '11:00',
-                            description: 'Свято Водохреща   «Там на річці, на Йордані»',
-                            place: 'Мікрорайон Теремно'
-                        }
                     ],
                     isToday: () => {
                         return true ? this.currentDate.day == 19
@@ -875,8 +845,8 @@ const app = Vue.createApp({
                     events: [
                         {
                             time: '17:00',
-                            description: 'Святковий концерт «Неповторна мить Різдва»',
-                            place: 'Луцька музична школа №1 імені Фридерика Шопена'
+                            description: 'Святковий онлайн концерт «Неповторна мить Різдва»',
+                            place: 'fb-сторінка Луцької музичної школи №1 імені Фридерика Шопена'
                         }
                     ],
                     isToday: () => {
@@ -885,21 +855,7 @@ const app = Vue.createApp({
                     }
                 },
                 {
-                    day: '23 січня',
-                    events: [
-                        {
-                            time: '10:00',
-                            description: 'Всеукраїнський фестиваль-конкурс спортивного бального танцю «Різдвяні зірочки 2021»',
-                            place: 'Палац культури міста Луцька'
-                        }
-                    ],
-                    isToday: () => {
-                        return true ? this.currentDate.day == 23 
-                        && this.currentDate.month == 1 : false
-                    }
-                },
-                {
-                    day: '23 - 24 січня',
+                    day: '30 - 31 січня',
                     events: [
                         {
                             time: '',
@@ -908,8 +864,22 @@ const app = Vue.createApp({
                         }
                     ],
                     isToday: () => {
-                        return true ? (this.currentDate.day >= 23 && this.currentDate.day <= 24)
+                        return true ? (this.currentDate.day >= 30 && this.currentDate.day <= 31)
                         && this.currentDate.month == 1 : false
+                    }
+                },
+                {
+                    day: '6 лютого',
+                    events: [
+                        {
+                            time: '10:00',
+                            description: 'Всеукраїнський фестиваль-конкурс спортивного бального танцю «Різдвяні зірочки 2021»',
+                            place: 'Палац культури міста Луцька'
+                        }
+                    ],
+                    isToday: () => {
+                        return true ? this.currentDate.day == 6
+                        && this.currentDate.month == 2 : false
                     }
                 },
                 {
@@ -933,7 +903,7 @@ const app = Vue.createApp({
                         {
                             time: '',
                             description: 'Онлайн фотоконкурс «Святковий Луцьк, який ви любите»',
-                            place: 'Соціальні мережі'
+                            place: 'fb - сторінка Департаменту культури'
                         },
                         {
                             time: '',
@@ -994,17 +964,14 @@ app.component('default-welcoming-screen', {
         <img src="/img/text-separator.png" style="width: 100%;" alt="">
     </div>
     <div class="welcoming-window-text">
-        <span class="welcoming-window-text-header">
+        <div class="welcoming-window-text-header">
             Ласкаво просимо!
-        </span>
+        </div>
         <br>
         <br>
-        <br>
-        <span class="welcoming-window-text-regular">
-            Свято починається з 9 грудня і триває до 24 січня!
-            <br>
-            Прогорніть нижче, щоб дізнатися деталі
-        </span>
+        <div class="welcoming-window-text-regular">
+            Свято 2021 починається!
+        </div>
     </div>
     <div class="welcoming-window-button-holder">
         <div class="welcoming-window-button" v-on:click="$emit('change-component', 'greetings-welcoming-screen')">

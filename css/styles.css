@@ -4,6 +4,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 body, html {
     margin: 0;
     padding: 0;
@@ -11,12 +12,12 @@ body, html {
 }
 
 .root-welcoming-window {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: fit-content;
 }
 
 

@@ -991,8 +991,8 @@ app.component('greetings-welcoming-screen', {
 </div>
 <div class="greeting-welcoming-window-text d-flex flex-column align-items-center col-11 col-md-7 ">
     <div class="greeting-welcoming-window-text-header">
-        &emsp;Мої найщиріші вітання з нагоди новорічно-різдвяних свят!
-        Зичу здоров’я, миру, добробуту, Божого благословення і багато святкових радостей!
+        &emsp;Щирі вітання з нагоди новорічно-різдвяних свят!!!
+        Зичу здоров’я, миру, добробуту, Божого благословіння, святкового дива та радості! 
     </div>
     <div class="greeting-welcoming-window-text-footer mt-4 d-flex flex-row align-items-center justify-content-between">
         <div>

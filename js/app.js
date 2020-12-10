@@ -992,10 +992,10 @@ app.component('greetings-welcoming-screen', {
     <div class="greeting-welcoming-window-text-decor">
     <img src="/img/text-separator_lamps.png" style="width: 100%;" alt="">
 </div>
-<div class="greeting-welcoming-window-text d-flex flex-column align-items-center col-11 col-md-8 ">
+<div class="greeting-welcoming-window-text d-flex flex-column align-items-center col-11 col-md-7 ">
     <div class="greeting-welcoming-window-text-header">
-        &emsp;Щирі вітання з нагоди новорічно-різдвяних&nbsp;свят!!!<br>
-        Зичу здоров’я, миру, добробуту, Божого благословіння, святкового дива та радості! 
+        &emsp;Щирі вітання з нагоди новорічно-різдвяних&nbsp;свят!!!
+        Зичу здоров’я, миру, добробуту, Божого благословіння, святкового дива та радості!
     </div>
     <div class="greeting-welcoming-window-text-footer mt-4 d-flex flex-row align-items-center justify-content-between">
         <div>
